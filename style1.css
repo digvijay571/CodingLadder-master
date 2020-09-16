@@ -269,7 +269,11 @@
  /* Cards section */
 
 
-
+.heading{
+    font-size: 30px;
+    text-align: center;
+    margin: 20px;
+}
  .cards_con {
      /* height:1060px; */
      max-width: 80%;

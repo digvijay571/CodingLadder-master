@@ -25,6 +25,10 @@ $(document).ready(function () {
     mouseenter: function () { $(".i5>a")[0].style.color = "red";},
     mouseleave: function () {$(".i5>a")[0].style.color = "rgb(142,116,116)";},
   });
+  $(".i6").on({
+    mouseenter: function () { $(".i6>a")[0].style.color = "red";},
+    mouseleave: function () {$(".i6>a")[0].style.color = "rgb(142,116,116)";},
+  });
   $("img[src='hamburger.svg']").click(function () {
     $(".sub_menu").slideToggle();
   });

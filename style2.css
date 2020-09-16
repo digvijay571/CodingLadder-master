@@ -101,9 +101,6 @@ a {
     img[src="hamburger.svg"]:hover{
        cursor: pointer;
     }
-   .slider_con {
-        margin: 20px;
-    }
     img[src="accounts-vector.svg"]{
         display: none;
     }
