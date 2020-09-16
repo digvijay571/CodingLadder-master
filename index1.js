@@ -42,6 +42,16 @@ $(document).ready(function () {
     $(".hide3").slideToggle();
   });
 
+$('a[href="#h1"]').click(
+function(){
+  window.scrollTo(0,658)
+}
+)
+$('a[href="#h2"]').click(()=>{
+  window.scrollTo(0,658*3-190);
+})
+
+
 
 //carasoul
 
