@@ -567,6 +567,7 @@
  }
 
  .review_pic {
+     height:130px;
      border-radius: 50%;
      margin: 5px;
  }
