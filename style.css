@@ -19,12 +19,14 @@
  .carousel {
      margin: 20px 0;
      background-image: url('img2.jpg');
+     filter: saturate(1.2);
      background-size: cover;
      background-position:center;
      background-repeat: no-repeat;
      background-attachment: fixed;
+     /* filter: sepia(0.1); */
      overflow: hidden;
-     height:  700px;
+     height:  600px;
      position: relative;
      padding: 20px 0px;
      display: flex;
@@ -52,6 +54,7 @@
 
  .carousel .icon-container span.lnr {
      color: #dadada;
+     z-index: 0;
      font-size: 1.6em;
      cursor: pointer;
      transition: color 0.3s linear;
@@ -64,27 +67,31 @@
  }
 
  .carousel .icon-container span.lnr:hover {
-     color: #fff;
+     /* color: #fff; */
  }
 
  .carousel h1 {
-     line-height: 2rem;
-     background-color: rgba(255, 74, 74, 0.589);
-     width: 18rem;
+     line-height: 2.3rem;
+     font-family: "Nunito", "Helvetica Neue", Helvetica, Arial, sans-serif;
+     /* color: black; */
+     /* background-color: rgba(255, 74, 74, 0.918); */
+     /* width: 18rem; */
      padding:0.8rem;
-     border-radius: 10px;
+     border-radius: 3px;
      margin: 0 auto;
+  
  }
 
  .carousel p {
      /* color:black; */
-     padding: 2rem 0;
-     font-size: 1em;
-     line-height: 2.3rem;
-     border-radius: 10px;
-     background-color: rgba(153, 89, 142, 0.774);
+     color: white;
+     padding: 2rem ;
+     font-size: 1.1rem;
+     line-height: 1.5rem;
+     border-radius: 8px;
+     background-color: rgba(26, 26, 138, 0.671);
      width: 60%;
-     margin-top:2.5rem;
+     /* margin-top:2.5rem; */
      margin-left: auto;
      margin-right: auto;
  }
@@ -92,19 +99,31 @@
  .carousel button {
      line-height: 2rem;
      display: inline-block;
-     padding:5px;
+     color: white;
+     background-color:rgb(226, 14, 14) ;
+     border: 3px solid white;
+     padding:8px;
      width: 18rem;
-     font-size: 1em;
+     font-size: 1.2em;
+     font-weight: bolder;
      border-radius: 10px;
      margin-left: auto;
      margin-right: auto;
      margin-top: 40px;
+    
+ }
+ .carousel button:hover{
+    cursor:pointer;
+    transition: all 0.3s ease;
+    background-color:white;
+    color:rgb(226, 14, 14);
+    border:3px solid red;
 
  }
 
  @media (min-width: 768px) {
      .carousel p {
-         font-size: 1.4em;
+         /* font-size: 1.4em; */
      }
  }
 
@@ -555,6 +574,15 @@
      /* padding:10px; */
 
  }
+ .card_button:hover{
+    color:red;
+    font-weight: bold;
+    background-color: white;
+    border:1px solid white;
+    transition:all 0.3s ease;
+    cursor:pointer;
+
+ }
 
  .b2 {
      background-color: rgb(252, 79, 79);
@@ -801,6 +829,14 @@
      padding: 10px;
      border: 2px solid pink;
  }
+ .form_con>button:hover {
+    cursor: pointer;
+    background-color: white;
+    transition: all 0.3s ease;
+ }
+ textarea{
+     text-indent: 10px;
+ }
 
  @media only screen and (max-width:486px) {
      label {
@@ -862,6 +898,9 @@
      font-family: "Nunito", "Helvetica Neue", Helvetica, Arial, sans-serif;
      color: white;
  }
+ .footer_col>div:hover {
+  cursor: pointer;
+ }
 
  .fotter_side {
      font-family: "Nunito", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -875,6 +914,7 @@
      border-bottom: 0.1px solid white;
  }
 
+
  .footer_link {
 
      width: 100px;
@@ -886,9 +926,21 @@
  }
 
  .footer_link>a {
+     box-sizing: border-box;
      font-size: 20px;
+     width: 100%;
+     display: inline-block;
      color: rgb(228, 228, 228);
-     padding: 10px 30px;
+     /* padding: 10px 30px; */
+ }
+ .footer_link>a:hover {
+   color: black;
+   background-color: white;
+   transition: background-color 0.3s ease,color 0.3s ease;
+   border-left:3px solid black;
+   border-right:3px solid black;
+   border-top:1px solid black;
+   border-bottom:1px solid black;
  }
 
  @media (max-width:855px) {
