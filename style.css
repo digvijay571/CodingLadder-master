@@ -18,7 +18,7 @@
  /* slider */
  .carousel {
      margin: 20px 0;
-     background-image: url('img2.jpg');
+     background-image: url("https://images.unsplash.com/photo-1489347215392-cee3b4f539aa?dpr=1&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=");
      background-size: cover;
      background-position:center;
      background-repeat: no-repeat;
