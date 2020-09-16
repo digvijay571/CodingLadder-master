@@ -1,0 +1,18 @@
+<svg height="0" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 130.08 130.08">
+<defs>
+    <style>
+        .c-1 {
+            fill: #8280bd;
+        }
+
+        .c-2 {
+            fill: #fff;
+        }
+    </style>
+</defs>
+<circle class="c-1" cx="65.04" cy="65.04" r="65.04" />
+<rect class="c-2" x="24.04" y="32.6" width="82" height="15" rx="7.5" />
+<rect class="c-2" x="24.04" y="60.6" width="82" height="15" rx="7.5" />
+<rect class="c-2" x="24.04" y="88.6" width="82" height="15" rx="7.5" />
+</svg>
