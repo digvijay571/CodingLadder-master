@@ -48,7 +48,7 @@
                     <img src="images.png" alt="">
                     <div><b>Name:</b>Digvijay Singh Yadav</div>
                     <div><b>College:</b>Nit Jamshedpur</div>
-                <div><b>Contact:</b><a targer="_blank" href="https://mail.google.com" title="on click email copies click to send mail" onmousedown="copyToClipboard()">digvijay@gmail.com</a></div>
+                <div><b>Contact:</b><a targer="_blank" href="https://mail.google.com" title="on click email copies click to send mail" onmousedown="copyToClipboard1()">2019ugee41@nitjsr.ac.in</a></div>
 
                     
                 </div>
@@ -56,7 +56,7 @@
                     <img src="images.png" alt="">
                     <div><b>Name:</b>Massum</div>
                     <div><b>College:</b>Nit Jamshedpur</b></div>
-                    <div><b>Contact:</b>Massum@gmail.com</div>
+                    <div><b>Contact:</b><a targer="_blank" href="https://mail.google.com" title="on click email copies click to send mail" onmousedown="copyToClipboard2()">2019ugee38@nitjsr.ac.in</a></div>
             
                 </div>
             </div>
@@ -67,10 +67,19 @@
     crossorigin="anonymous"></script>
 <script src="index1.js"></script>
 <script>
-    function copyToClipboard(){
+    function copyToClipboard1(){
         console.log("hellooooo")
   const el = document.createElement('textarea');
-  el.value ="digvijay@gmail.com";
+  el.value ="2019ugee041@nitjsr.ac.in";
+  document.body.appendChild(el);
+  el.select();
+  document.execCommand('copy');
+  document.body.removeChild(el);
+    }
+    function copyToClipboard2(){
+        console.log("hellooooo")
+  const el = document.createElement('textarea');
+  el.value ="2019ugee038@nitjsr.ac.in";
   document.body.appendChild(el);
   el.select();
   document.execCommand('copy');
