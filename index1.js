@@ -1,6 +1,7 @@
 
 
 $(document).ready(function () {
+  window.scrollBy(0,1)//for animation
   
   $(".i1").on({
     mouseenter: function () {$(".i1>a")[0].style.color = "red";},
