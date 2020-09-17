@@ -1,7 +1,7 @@
 
 
 $(document).ready(function () {
-  window.scrollBy(0,1)
+  
   // $(".i1").on({
   //   mouseenter: function () {$(".i1>a")[0].style.color = "red";},
   //   mouseleave: function () {$(".i1>a")[0].style.color = "rgb(142,116,116)";},
@@ -42,14 +42,27 @@ $(document).ready(function () {
   $(".sub3").click(function () {
     $(".hide3").slideToggle();
   });
-
-$('a[href="#h1"]').click(
-function(){
-  window.scrollTo(0,658)
+let win = window;
+document.body.onclick = function(e){
+  
+  console.log(e.target.tagName);
+  if(e.target.tagName == 'A'){
+    console.log("hello1",e.target.className)
+    if(e.target.className === "check1" || e.target.className === 'check2'){
+      console.log("hello2");
+      let val1 = document.querySelector('.h3').getBoundingClientRect().y-100;
+      console.log(val1);
+          win.scrollBy(0,100);
+          console.log("hello3");
+ 
+        }
+  }
 }
-)
-$('a[href="#h2"]').click(()=>{
+$('a[href="#h23"]').click(()=>{
   window.scrollTo(0,658*3-190);
+})
+$('a[href="#h13"]').click(()=>{
+  window.scrollTo(0,658);
 })
 
 
